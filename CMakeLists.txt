@@ -2,7 +2,7 @@ cmake_minimum_required( VERSION 3.2 )
 
 project( bulk_server VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER} )
 
-find_package(Boost COMPONENTS system filesystem REQUIRED)
+find_package(Boost COMPONENTS system filesystem atomic REQUIRED)
 
 add_executable( bulk_server bulk_server.cpp bulk.h )
 
