@@ -6,7 +6,6 @@ find_package(Boost COMPONENTS system filesystem REQUIRED)
 
 add_executable( bulk_server bulk_server.cpp bulk.h )
 
-
 set_target_properties( bulk_server PROPERTIES
 	CXX_STANDARD 14
 	CXX_STANDARD_REQUIRED ON
@@ -22,7 +21,6 @@ target_link_libraries(bulk_server
 )
 
 install( TARGETS bulk_server RUNTIME DESTINATION bin)
-
 
 set( CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}" )
 set( CPACK_PACKAGE_VERSION_MINOR "${PROJECT_VERSION_MINOR}" )
