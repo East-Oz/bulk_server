@@ -184,12 +184,7 @@ public:
 				is_ready_data = false;
 				m_nCount = 0;
 			}
-
 		}
-		m_pExecutor->set_commands( m_Commands, fct );
-		m_Commands.clear();
-		is_ready_data = false;
-		m_nCount = 0;
 	}
 
 private:
